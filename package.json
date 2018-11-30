@@ -11,9 +11,14 @@
     "start": "webpack-dev-server --content-base app/",
     "build:dev": "webpack",
     "build:prod": "NODE_ENV=production webpack",
+    "build:android": "NODE_ENV=production webpack && npx cap sync android && npx cap open android",
+    "build:ios": "NODE_ENV=production webpack && npx cap sync ios && npx cap open ios",
     "watch": "webpack --watch --progress --colors --display-modules"
   },
   "dependencies": {
+    "@capacitor/android": "^1.0.0-beta.11",
+    "@capacitor/cli": "^1.0.0-beta.11",
+    "@capacitor/core": "^1.0.0-beta.11",
     "imba": "^1.4.0"
   },
   "devDependencies": {

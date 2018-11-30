@@ -1,0 +1,6 @@
+{
+  "appId": "com.imba.hn",
+  "appName": "ImbaHN",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
