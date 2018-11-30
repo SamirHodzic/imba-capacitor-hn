@@ -7,6 +7,7 @@
   "engines": {
     "node": ">=6.0.0"
   },
+  "homepage" : "http://samirhodzic.github.io/imba-capacitor-hn",
   "repository": {
     "type": "git",
     "url": "git://github.com/SamirHodzic/imba-capacitor-hn"
@@ -17,7 +18,8 @@
     "build:prod": "NODE_ENV=production webpack",
     "build:android": "NODE_ENV=production webpack && npx cap sync android && npx cap open android",
     "build:ios": "NODE_ENV=production webpack && npx cap sync ios && npx cap open ios",
-    "watch": "webpack --watch --progress --colors --display-modules"
+    "watch": "webpack --watch --progress --colors --display-modules",
+    "deploy": "gh-pages -d www"
   },
   "dependencies": {
     "@capacitor/android": "^1.0.0-beta.11",
@@ -32,6 +34,7 @@
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.2",
+    "gh-pages": "^2.0.1",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.10.0",
     "sass-loader": "^7.1.0",
