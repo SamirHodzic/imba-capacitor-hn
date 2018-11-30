@@ -7,6 +7,10 @@
   "engines": {
     "node": ">=6.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SamirHodzic/imba-capacitor-hn"
+  },
   "scripts": {
     "start": "webpack-dev-server --content-base app/",
     "build:dev": "webpack",
