@@ -1,0 +1,16 @@
+@import './utils';
+@import './header';
+@import './pages';
+
+body,
+html {
+  margin: 0;
+  font-family: arial;
+  height: 100vh;
+  background: #ccc;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}

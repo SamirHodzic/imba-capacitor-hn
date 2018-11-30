@@ -1,0 +1,34 @@
+{
+  "name": "imba-capacitor-hn",
+  "description": "HackerNews with Imba and Capacitor",
+  "author": "SamirH",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --content-base app/",
+    "build:dev": "webpack",
+    "build:prod": "NODE_ENV=production webpack",
+    "watch": "webpack --watch --progress --colors --display-modules"
+  },
+  "dependencies": {
+    "imba": "^1.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.1",
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
