@@ -12,7 +12,7 @@ export tag Item
 		item = null
 
 	def goToUser user
-		router.go("/#user/{user}")
+		router.go("/#!user/{user}")
 	
 	def collapse comment
 		comment:collapse = !comment:collapse

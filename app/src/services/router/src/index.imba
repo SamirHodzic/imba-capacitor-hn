@@ -193,13 +193,12 @@ export class Router
 		@refreshing = yes
 		
 		let original = @location
-		let loc = Location.parse(params:location && params:location.url[0] == '#' ? realLocation : params:location or realLocation)
+		let loc = Location.parse(params:location or realLocation)
 		let mode = params:mode
 
 		if loc.url == '/'
 			@refreshing = no
 			return self
-	
 		# we need to compare with the previously stored location
 		# also see if state is different?
 		if !loc.equals(original)
@@ -328,7 +327,7 @@ export class Router
 	def replace url, state = {}
 		let loc = @location.clone.update(url,state)
 		refresh(replace: yes, mode: 'replace', location: loc, state: state)
-		history.replaceState(state,null,normalize(url,state))
+		# history.replaceState(state,null,normalize(url,state))
 		# refresh
 		
 	def normalize url

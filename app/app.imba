@@ -11,21 +11,21 @@ import User from './src/components/user';
 import Item from './src/components/item';
 
 tag App
-	def mount
+	def setup
 		if router.hash
-			router.go(router.hash)
+			router.go(router.path)
 		else
-			router.go('/#newest/1')
+			router.go('/#!newest/1')
 
 	def render
 		<self.container>
 			<Header>
-			<News route='/#news'>
-			<Newest route='/#newest'>
-			<Ask route='/#ask'>
-			<Show route='/#show'>
-			<Jobs route='/#jobs'>
-			<User route='/#user'>
-			<Item route='/#item'>
+			<News route='/#!news'>
+			<Newest route='/#!newest'>
+			<Ask route='/#!ask'>
+			<Show route='/#!show'>
+			<Jobs route='/#!jobs'>
+			<User route='/#!user'>
+			<Item route='/#!item'>
 
 Imba.mount <App>

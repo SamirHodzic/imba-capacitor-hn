@@ -18,17 +18,17 @@ export tag Base
 		value ? page++ : page--
 		items = []
 
-		router.go("/#{type}/{page}")
+		router.go("/#!{type}/{page}")
 
 		items = await fetchData
 		window.scrollTo(0, 0)
 		Imba.commit
 
 	def goToUser user
-		router.go("/#user/{user}")
+		router.go("/#!user/{user}")
 
 	def goToItem item
-		router.go("/#item/{item}")
+		router.go("/#!item/{item}")
 
 	def render
 		<self>
