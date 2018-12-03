@@ -1,32 +1,48 @@
 # imba-capacitor-hn
 
-> In progress
+See this application live at: https://samirhodzic.github.io/imba-capacitor-hn/
 
-Install dependencies
-```sh
-npm install
-```
+This is an example of a HackerNews built using [Imba](http://imba.io), [Webpack](https://webpack.js.org), and [Capacitor](https://capacitor.ionicframework.com) (for mobile packing). Please do not think of this as the way to build your application. Instead, this as an experimental concept used to understand a bit Imba and trying to use it for both web/mobile development.
 
-Add mobile platform (optional)
-```sh
-npx cap add android
-npx cap add ios
-```
+<img src="assets/imba-capacitor-hn.gif"/>
 
-Web dev
-```sh
-npm start
-```
+## Installation
 
-Build dev/prod versions
-```sh
-npm run build:dev
-npm run build:prod
-```
+1. Install dependencies
+    ```sh
+    npm install
+    ```
+2. (optional) Add mobile platforms
+    ```sh
+    npx cap add android
+    
+    # or
+    
+    npx cap add ios
+    ```
+3. Run Locally web version
+    ```sh
+    npm start
 
-Build prod and open Android/iOS
+    # Project is running at http://localhost:8080/
+    ```
+4. Build dev/prod versions
+    ```sh
+    npm run build:dev
+    
+    # or
+    
+    npm run build:prod
+    ```
+5. Build prod version and open Android/iOS
+    ```sh
+    npm run build:android
+    
+    # or
+    
+    npm run build:ios
+    ```
 
-```sh
-npm run build:android
-npm run build:ios
-```
+## License
+
+MIT
