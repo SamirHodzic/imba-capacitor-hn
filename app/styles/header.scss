@@ -90,7 +90,7 @@
       }
     }
   }
-  #menu-toggle {
+  .menu-toggle {
     display: none;
     &.active ~ .menu-button,
     &:checked ~ .menu-button {

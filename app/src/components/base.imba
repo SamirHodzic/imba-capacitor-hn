@@ -33,7 +33,7 @@ export tag Base
 	def render
 		<self>
 			if items && items:length > 0
-				<ul.news-container> for item, i in items
+				<ul.news-container> for item in items
 					<li.news-item>
 						<span.points>
 							item:points
@@ -62,6 +62,6 @@ export tag Base
 				<div.control.left.disabled=(page == 1) :click.changePage(false)>
 					'Prev'
 				<div.control.paging>
-					"{page || 1}/{maxPages || 1}"
+					"{page || 1} / {maxPages || 1}"
 				<div.control.right.disabled=(page == maxPages) :click.changePage(true)>
 					'Next'

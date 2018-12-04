@@ -1,5 +1,5 @@
 import { getUser } from '../services/api';
-import { innerHtml } from '../services/shared';
+import { innerHtml, ycombinator } from '../services/shared';
 
 export tag User
 	prop user
@@ -26,8 +26,8 @@ export tag User
 						<li.about>
 							innerHtml(user:about || '')
 					<p.links>
-						<a href="https://news.ycombinator.com/submitted?id={user:id}" target='_blank'> 'submissions'
+						<a href="{ycombinator}/submitted?id={user:id}" target='_blank'> 'submissions'
 						' | '
-						<a href="https://news.ycombinator.com/threads?id={user:id}" target='_blank'> 'comments'
+						<a href="{ycombinator}/threads?id={user:id}" target='_blank'> 'comments'
 			else
 				<div.loading-pulse>
