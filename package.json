@@ -19,7 +19,7 @@
     "build:android": "NODE_ENV=production webpack && npx cap sync android && npx cap open android",
     "build:ios": "NODE_ENV=production webpack && npx cap sync ios && npx cap open ios",
     "watch": "webpack --watch --progress --colors --display-modules",
-    "deploy": "gh-pages -d www"
+    "deploy": "npm run build:prod && gh-pages -d www"
   },
   "dependencies": {
     "@capacitor/android": "^1.0.0-beta.11",
