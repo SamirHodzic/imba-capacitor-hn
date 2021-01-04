@@ -1,7 +1,5 @@
 # imba-capacitor-hn
 
-See this application live at: https://samirhodzic.github.io/imba-capacitor-hn/
-
 This is an example of a HackerNews built using [Imba](http://imba.io), [Webpack](https://webpack.js.org), and [Capacitor](https://capacitor.ionicframework.com) (for mobile packing). Please do not think of this as the way to build your application. Instead, this as an experimental concept used to understand a bit Imba and trying to use it for both web/mobile development.
 
 <img src="assets/imba-capacitor-hn.gif"/>
